@@ -129,6 +129,10 @@ input::placeholder{
 .menu a button img{
     width: 20px;
     float: right;
+    transition: all 0.2s ease-in-out;
+}
+.menu a button img:hover{
+    transform: scale(1.1);
 }
 
 /* Offer Style */
@@ -160,6 +164,10 @@ footer .offer img{
     margin-right: -10px;
     width: 20px;
     float: right;
+    transition: all 0.2s ease-in-out;
+}
+footer .offer img:hover{
+    transform: scale(1.1);
 }
 
 /* Slider Style */
