@@ -1,29 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: url(./img/background-image.jpg) no-repeat;
+    background-size: cover;
+    background-color: #dbdbdb;
     margin: 0;
     padding: 0;
 }
+/* Navbar Style */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 70px;
+    padding: 30px 100px;
 }
 .logo img{
-    width: 150px;
+    width: 180px;
 }
-.search img{
-    width: 15px;
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+    border-radius: 25px;
+    width: 60%;
+    margin: 20px auto;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-18%);
 }
 .search input{
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 75%;
+    font-size: 12px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    border-color: white;
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .search button{
     background: none;
     border: none;
     cursor: pointer;
+}
+.search img{
+    width: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* Image Block Style */
+.image-block{
+    position: relative;
+    display: inline-block;
+}
+.image-block img{
+    object-fit: cover;
+    width: 840px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 0.5%;
+    margin-left: 4%;
+}
+.image-text{
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.646);
+    padding: 20px;
+    border-radius: 10px;
+}
+.image-text h2{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+.image-text p{
+    font-size: 12px;
+    margin: 6px 0;
+}
+.image-text a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* Menu Style */
+.menu{
+    position: absolute;
+    top: 45%;
+    right: 55px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px 10px;
+    gap: 15px;
+}
+.menu a button{
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 350px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+.menu a button img{
+    width: 20px;
+    float: right;
+}
+
+/* Offer Style */
+footer .offer{
+    position: absolute;
+    top: 87%;
+    right: 55px;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.883);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    width: 330px;
+    height: 85px;
+}
+footer .offer h2{
+    margin: 0 0 10px;
     font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+footer .offer p{
+    font-size: 14px;
+    color: #000000;
+}
+footer .offer img{
+    margin-top: -10px;
+    margin-right: -10px;
+    width: 20px;
+    float: right;
+}
+
+/* Slider Style */
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin-left: 2.5%;
+    width: 50%;
+    border-radius: 15px;
+    gap: 50px;
+}
+
+/* Estilo para el slider */
+.slider {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+}
+.slider .images{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slider img{
+    width: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.slider .prev{
+    left: -10px;
+}
+.slider .next{
+    right: -10px;
 }
