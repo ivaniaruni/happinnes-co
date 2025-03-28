@@ -58,6 +58,10 @@ input::placeholder{
     width: 15px;
     margin-left: 10px;
     margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.search img:hover{
+    transform: scale(1.1);
 }
 
 /* Image Block Style */
@@ -76,13 +80,13 @@ input::placeholder{
 }
 .image-text-principal{
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 4%;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.646);
+    background-color: rgba(255, 255, 255, 0.646);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
 .image-text-principal h2{
     margin: 0;
@@ -94,7 +98,7 @@ input::placeholder{
     margin: 6px 0;
 }
 .image-text-principal a{
-    color: #fff;
+    color: #000000;
     font-size: 12px;
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
@@ -147,7 +151,7 @@ footer .offer{
     transform: translateY(-50%);
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
     text-align: left;
     width: 330px;
@@ -188,7 +192,7 @@ footer .offer img:hover{
     display: flex;
     align-items: center;
     width: 580px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 20px 50px 20px 50px;
     border-radius: 10px;
@@ -219,11 +223,11 @@ footer .offer img:hover{
 .image-text{
     position: absolute;
     bottom: 15px;
-    left: 29.2%;
+    left: 29%;
     top: 45%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.646);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.813);
+    color: rgb(0, 0, 0);
     padding: 7px;
     border-radius: 0 10px 10px 0;
     width: 50%;
@@ -239,7 +243,7 @@ footer .offer img:hover{
     font-size: 10px;
 }
 .image-text a{
-    color: #fff;
+    color: #000000;
     font-size: 10px;
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
@@ -274,7 +278,7 @@ footer .offer img:hover{
     align-items: center;
     gap: 12px;
     margin-left: 18px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 10px;
@@ -290,14 +294,69 @@ footer .offer img:hover{
 }
 
 /* Copyright Style */
-/* Copyright */
-.copyright {
+.copyright{
     font-size: 10px;
     color: black;
     font-weight: 400;
     width: 4.3%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 10px 10px 0;
     padding: 12px;
     z-index: -1;
+}
+
+/* Animation Style */
+@keyframes slideDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body{
+    animation: slideDown 1s ease-in-out;
+}
+.image-block{
+    animation: slideDown 1s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+.gallery{
+    animation: slideDown 1s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+.social-media{
+    animation: slideDown 1s ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+}
+.copyright{
+    animation: slideDown 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+/* Footer/Menu Animation */
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.menu{
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+footer .offer{
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
 }
