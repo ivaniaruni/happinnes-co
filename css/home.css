@@ -76,7 +76,7 @@ input::placeholder{
 }
 .image-text-principal{
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 4%;
     color: white;
     text-align: center;
@@ -97,6 +97,10 @@ input::placeholder{
     color: #fff;
     font-size: 12px;
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+.image-text-principal a:hover{
+    font-weight: 600;
 }
 
 /* Menu Style */
@@ -109,7 +113,7 @@ input::placeholder{
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px 10px;
     gap: 15px;
 }
@@ -142,8 +146,8 @@ footer .offer{
     right: 55px;
     transform: translateY(-50%);
     padding: 20px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.883);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
     text-align: left;
     width: 330px;
@@ -177,17 +181,17 @@ footer .offer img:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-left: -44.5%;
+    margin-left: -32.5%;
 }
 .slider{
     position: relative;
     display: flex;
     align-items: center;
     width: 580px;
-    background-color: rgba(255, 255, 255, 0.828);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 20px 50px 20px 50px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .images-container{
     overflow: hidden;
@@ -214,14 +218,14 @@ footer .offer img:hover{
 /* Text Style */
 .image-text{
     position: absolute;
-    bottom: 10px;
-    left: 29%;
+    bottom: 15px;
+    left: 29.2%;
     top: 45%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.646);
     color: white;
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     width: 50%;
     text-align: center;
 }
@@ -238,7 +242,12 @@ footer .offer img:hover{
     color: #fff;
     font-size: 10px;
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
 }
+.image-text a:hover{
+    font-weight: 600;
+}
+
 .slider .prev,
 .slider .next{
     position: absolute;
@@ -256,4 +265,39 @@ footer .offer img:hover{
     width: 20px;
     right: 10px;
     transform: translateY(-50%);
+}
+
+/* Social Media Style */
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-left: 18px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 10px;
+}
+.social-media a img{
+    width: 25px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+.social-media a img:hover{
+    transform: scale(1.1);
+}
+
+/* Copyright Style */
+/* Copyright */
+.copyright {
+    font-size: 10px;
+    color: black;
+    font-weight: 400;
+    width: 4.3%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    padding: 12px;
+    z-index: -1;
 }
