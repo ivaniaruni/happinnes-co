@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAPPINESS&Co - Eventos y Viajes</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <div class="logo">
             <a href="home.html"><img src="./img/icon/happines-and-co-propuesta-03.png" alt="Logo HAPPINESS"></a>
@@ -17,16 +18,19 @@
             <button><img src="./img/icon/search-button.png" alt="Search Button"></button>
         </div>
     </nav>
+    <!-- Header -->
     <header>
+        <!-- Special Event -->
         <div class="image-block">
-            <a href="event.html"><img src="./img/travel-image.jpeg" alt="Island Image"></a>
-            <div class="image-text">
+            <a href="event.html"><img src="./img/events/travel-image.jpeg" alt="Island Image"></a>
+            <div class="image-text-principal">
                 <h2>Evento Especial</h2>
                 <p>11 de abril de 2025</p>
                 <p>Descubre las maravillas <br> de los eventos únicos.</p>
                 <a href="event.html">Ver más</a>
             </div>
         </div>
+        <!-- Menu -->
         <div class="menu">
             <a href="upcoming-events.html"><button>Inicio<img src="./img/icon/button.png" alt="Button"></button></a>
             <a href="event-history.html"><button>Historial de eventos<img src="./img/icon/button.png" alt="Button"></button></a>
@@ -37,15 +41,86 @@
         </div>
     </header>
     <section class="gallery">
+        <!-- Slider Image -->
         <div class="slider">
-            <button class="prev">&#10094;</button>
-            <div class="images">
-                <img src="./img/slider-1.jpg" alt="Event 1">
-                <img src="./img/slider-2.jpeg" alt="Event 2">
-                <img src="./img/slider-3.jpg" alt="Event 3">
-                <img src="./img/slider-4.jpg" alt="Event 4">
+            <img class="prev" src="./img/icon/button.png" alt="Previous">
+            <div class="images-container">
+                <div class="images">
+                    <div class="image-item">
+                        <img src="./img/events/slider-4.jpg" alt="Event 1">
+                        <div class="image-text">
+                            <h3>Evento 1</h3>
+                            <p>Fecha: 10 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-2.jpeg" alt="Event 2">
+                        <div class="image-text">
+                            <h3>Evento 2</h3>
+                            <p>Fecha: 13 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-3.jpg" alt="Event 3">
+                        <div class="image-text">
+                            <h3>Evento 3</h3>
+                            <p>Fecha: 15 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-1.jpg" alt="Event 4">
+                        <div class="image-text">
+                            <h3>Evento 4</h3>
+                            <p>Fecha: 21 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-4.jpg" alt="Event 5">
+                        <div class="image-text">
+                            <h3>Evento 5</h3>
+                            <p>Fecha: 23 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-2.jpeg" alt="Event 6">
+                        <div class="image-text">
+                            <h3>Evento 6</h3>
+                            <p>Fecha: 25 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-3.jpg" alt="Event 7">
+                        <div class="image-text">
+                            <h3>Evento 7</h3>
+                            <p>Fecha: 26 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./img/events/slider-1.jpg" alt="Event 8">
+                        <div class="image-text">
+                            <h3>Evento 8</h3>
+                            <p>Fecha: 28 de abril de 2025</p>
+                            <a href="event.html">Ver más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="next">&#10095;</button>
+            <img class="next" src="./img/icon/button.png" alt="Next">
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="./img/icon/001-facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="./img/icon/002-instagram.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./img/icon/003-x.png" alt="Instagram"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="./img/icon/004-tik-tok.png" alt="Tiktok"></a>
         </div>
     </section>
     <footer>
@@ -56,6 +131,6 @@
         </div>
     </footer>
 
-    <script src="slider-script.js"></script>
+    <script src="/js/slider-script.js"></script>
 </body>
 </html>
