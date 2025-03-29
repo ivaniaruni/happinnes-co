@@ -1,14 +1,13 @@
-/* Ajustes responsivos */
-@media (max-width: 1024px) {
-    .image-block {
+/* Responsive Style */
+@media (max-width: 1024px){
+    .image-block{
         width: 95%;
     }
-
-    .image-text-principal {
+    .image-text-principal{
         font-size: 14px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
     nav{
         flex-direction: column;
         padding: 30px 10px 0 0;
@@ -32,16 +31,14 @@
         width: 100%;
         padding: 8px 15px;
     }
-    .image-block {
+    .image-block{
         width: 90%;
         margin: 10px auto;
     }
-
-    .image-block img {
+    .image-block img{
         height: auto;
     }
-    
-    .menu {
+    .menu{
         position: relative;
         top: auto;
         right: auto;
@@ -50,44 +47,36 @@
         margin: 20px auto;
         background-color: rgba(255, 255, 255, 0.9);
     }
-
-    .menu a button {
+    .menu a button{
         width: 100%;
         font-size: 14px;
         padding: 10px;
     }
-    .gallery {
+    .gallery{
         width: 90%;
         margin: 20px auto 0;
         padding: 0;
         display: block;
     }
-    
-    .slider {
+    .slider{
         width: 100%;
         margin: 0 auto;
         padding: 15px;
     }
-    
-    .images .image-item img {
+    .images .image-item img{
         width: 220px;
         height: 130px;
     }
-    
-    .image-text {
+    .image-text{
         left: 25%;
         width: 60%;
         top: 40%;
     }
-    
-    /* Asegura que el footer esté debajo */
     footer .offer {
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
-    /* Social media debajo de todo */
-    .social-media {
+    .social-media{
         width: 90%;
         margin: 30px auto;
         flex-direction: row;
@@ -95,8 +84,7 @@
         gap: 20px;
         padding: 15px;
     }
-    
-    .copyright {
+    .copyright{
         width: 90%;
         margin: 0 auto 20px;
         text-align: center;
@@ -104,7 +92,7 @@
     }
 }
 
-@media (max-width: 480px){
+@media (min-width: 480px){
     nav{
         flex-direction: column;
         padding: 15px 10px 0 0;
