@@ -3,6 +3,7 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 300;
     font-style: normal;
+    min-height: 100vh;
     overflow-x: hidden;
     background: url(./img/background-image.jpg) no-repeat;
     background-size: cover;
@@ -111,7 +112,7 @@ input::placeholder{
 /* Menu Style */
 .menu{
     position: absolute;
-    top: 45%;
+    margin-top: -8.8%;
     right: 55px;
     transform: translateY(-50%);
     display: flex;
@@ -147,9 +148,9 @@ input::placeholder{
 
 /* Offer Style */
 footer .offer{
-    position: absolute;
-    top: 87%;
-    right: 55px;
+    position: relative;
+    margin-top: -6.5%;
+    margin-left: 68%;
     transform: translateY(-50%);
     padding: 20px;
     border-radius: 10px;
@@ -193,10 +194,10 @@ footer .offer img:hover{
     position: relative;
     display: flex;
     align-items: center;
-    width: 580px;
+    width: 35%;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-    padding: 20px 50px 20px 50px;
+    padding: 20px 33px 20px 33px;
     border-radius: 10px;
 }
 .images-container{
@@ -208,7 +209,8 @@ footer .offer img:hover{
     transition: transform 0.5s ease-in-out;
 }
 .images .image-item img{
-    width: 280px;
+    position: relative;
+    width: 90%;
     height: 155px;
     object-fit: cover;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
@@ -216,24 +218,24 @@ footer .offer img:hover{
     margin: 0 5px;
 }
 .image-item{
+    flex: 0 0 50%;
     position: relative;
-    width: 50%;
-    flex-shrink: 0;
+    display: inline-block;
     text-align: center;
 }
 /* Text Style */
 .image-text{
     position: absolute;
-    bottom: 15px;
-    left: 29%;
-    top: 45%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.813);
     color: rgb(0, 0, 0);
-    padding: 7px;
-    border-radius: 0 10px 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
     width: 50%;
     text-align: center;
+    z-index: 2;
 }
 .image-text h3{
     margin: 0;
@@ -261,6 +263,7 @@ footer .offer img:hover{
     transform: translateY(-50%);
     width: 50px;
     cursor: pointer;
+    z-index: 10;
 }
 .slider .prev{
     width: 20px;

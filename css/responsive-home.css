@@ -1,13 +1,12 @@
-/* Responsive Style */
-@media (max-width: 1024px){
-    .image-block{
-        width: 95%;
-    }
-    .image-text-principal{
-        font-size: 14px;
-    }
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
 }
 @media (max-width: 768px){
+    body{
+        background: url(./img/background-image.jpg) no-repeat center center;
+        object-fit: cover;
+        background-attachment: scroll;
+    }
     nav{
         flex-direction: column;
         padding: 30px 10px 0 0;
@@ -15,15 +14,15 @@
     }
     .logo{
         text-align: center;
-        margin-bottom: -20px;
+        margin-bottom: 15px;
     }
     .logo img{
         width: 150px;
     }
     .search{
         position: static;
-        width: 100%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 20px auto;
         transform: none;
         padding: 6px 0;
     }
@@ -36,7 +35,7 @@
         margin: 10px auto;
     }
     .image-block img{
-        height: auto;
+        height: 300px;
     }
     .menu{
         position: relative;
@@ -53,28 +52,48 @@
         padding: 10px;
     }
     .gallery{
-        width: 90%;
+        width: 93%;
         margin: 20px auto 0;
         padding: 0;
         display: block;
     }
     .slider{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         padding: 15px;
     }
     .images .image-item img{
-        width: 220px;
-        height: 130px;
+        width: 85%;
+        height: 120px;
     }
     .image-text{
-        left: 25%;
-        width: 60%;
-        top: 40%;
+        padding: 10px;
+        border-radius: 5px;
     }
-    footer .offer {
-        margin-top: 30px;
-        margin-bottom: 20px;
+    .image-text h2{
+        font-size: 8px;
+    }
+    .image-text p{
+        font-size: 8px;
+    }
+    .image-text a{
+        font-size: 8px;
+    }
+    footer .offer{
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 90px auto;
+        margin-bottom: -15%;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+    footer .offer img{
+        margin-top: -10px;
+        margin-right: -5px;
     }
     .social-media{
         width: 90%;
@@ -85,14 +104,22 @@
         padding: 15px;
     }
     .copyright{
-        width: 90%;
-        margin: 0 auto 20px;
+        display: block;
+        position: relative;
+        width: 80%;
+        margin: 10px auto;
+        margin-top: -15px;
         text-align: center;
+        font-size: 12px;
+        color: #555;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
         border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     }
 }
 
-@media (min-width: 480px){
+@media (max-width: 480px){
     nav{
         flex-direction: column;
         padding: 15px 10px 0 0;
@@ -128,7 +155,16 @@
         padding: 15px;
     }
     footer .offer{
-        display: none;
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 90px auto;
+        margin-bottom: -15%;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     }
     .slider{
         display: none;
@@ -137,6 +173,16 @@
         display: none;
     }
     .copyright{
-        display: none;
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     }
 }
