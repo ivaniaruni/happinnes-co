@@ -3,13 +3,12 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 300;
     font-style: normal;
+    height: 430px;
     min-height: 100vh;
     overflow-x: hidden;
     background: url(./img/background-image.jpg) no-repeat;
     background-size: cover;
     background-color: #dbdbdb;
-    margin: 0;
-    padding: 0;
 }
 /* Navbar Style */
 nav{
@@ -112,21 +111,22 @@ input::placeholder{
 /* Menu Style */
 .menu{
     position: absolute;
-    margin-top: -8.8%;
-    right: 55px;
+    margin-top: -115px;
+    margin-left: 68%;
+    width: 26%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px 10px;
     gap: 15px;
     z-index: 10;
 }
 .menu a button{
     font-family: "Montserrat Alternates", sans-serif;
-    width: 350px;
+    width: 100%;
     padding: 12px 20px;
     background-color: #ffffff;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
@@ -147,37 +147,37 @@ input::placeholder{
 }
 
 /* Offer Style */
-footer .offer{
-    position: relative;
-    margin-top: -6.5%;
-    margin-left: 68%;
+.offer{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 63.5%;
     transform: translateY(-50%);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
     text-align: left;
-    width: 330px;
+    width: 24.5%;
     height: 85px;
 }
-footer .offer h2{
+.offer h2{
     margin: 0 0 10px;
     font-size: 18px;
     font-weight: 400;
     color: #000000;
 }
-footer .offer p{
+.offer p{
     font-size: 14px;
     color: #000000;
 }
-footer .offer img{
+.offer img{
     margin-top: -10px;
     margin-right: -10px;
     width: 20px;
     float: right;
     transition: all 0.2s ease-in-out;
 }
-footer .offer img:hover{
+.offer img:hover{
     transform: scale(1.1);
 }
 
@@ -188,17 +188,17 @@ footer .offer img:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-left: -32.5%;
 }
 .slider{
     position: relative;
     display: flex;
     align-items: center;
-    width: 35%;
+    width: calc(48% - 20px);
+    margin-left: -47%;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 20px 33px 20px 33px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .images-container{
     overflow: hidden;
@@ -211,7 +211,7 @@ footer .offer img:hover{
 .images .image-item img{
     position: relative;
     width: 90%;
-    height: 155px;
+    height: 150px;
     object-fit: cover;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -276,34 +276,44 @@ footer .offer img:hover{
     transform: translateY(-50%);
 }
 
+footer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -205px;
+    margin-left: 52.5%;
+}
 /* Social Media Style */
-.social-media{
+footer .social-media{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    width: 2%;
     margin-left: 18px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 10px;
 }
-.social-media a img{
+footer .social-media a img{
     width: 25px;
     transition: transform 0.3s ease;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
 }
-.social-media a img:hover{
+footer .social-media a img:hover{
     transform: scale(1.1);
 }
 
 /* Copyright Style */
-.copyright{
+footer .copyright{
     font-size: 10px;
     color: black;
     font-weight: 400;
-    width: 4.3%;
+    width: 6%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 10px 10px 0;
     padding: 12px;
