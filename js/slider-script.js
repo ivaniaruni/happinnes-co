@@ -5,17 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.querySelector(".next");
     let currentIndex = 0;
 
-    // Recalcula el ancho del slider y ajusta el desplazamiento
     function updateSlider() {
-        const imageWidth = images[0].offsetWidth; // Ancho de una imagen
-        const visibleImages = 1; // Número de imágenes visibles
-        const totalWidth = imageWidth * visibleImages; // Ancho total visible
+        const imageWidth = images[0].offsetWidth;
+        const visibleImages = 1;
+        const totalWidth = imageWidth * visibleImages;
         slider.style.transform = `translateX(${-currentIndex * totalWidth}px)`;
     }
 
     // Botón "Siguiente"
     nextButton.addEventListener("click", function () {
-        if (currentIndex < Math.ceil(images.length / 2) - 1) { // Ajusta el límite para deslizar 2 imágenes
+        if (currentIndex < Math.ceil(images.length / 2) - 1) {
             currentIndex++;
             updateSlider();
         }
@@ -29,9 +28,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Recalcula el slider al redimensionar la ventana
     window.addEventListener("resize", updateSlider);
 
-    // Inicializa el slider
     updateSlider();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const upcomingSliderContainer = document.querySelector(".gallery-upcoming");
+    const upcomingSlider = upcomingSliderContainer.querySelector(".images-upcoming");
+    const upcomingImages = upcomingSliderContainer.querySelectorAll(".image-item-upcoming");
+    const prevUpcomingButton = upcomingSliderContainer.querySelector(".prev-upcoming");
+    const nextUpcomingButton = upcomingSliderContainer.querySelector(".next-upcoming");
+
+    let currentIndexUpcoming = 0;
+
+    const visibleImagesUpcoming = 3;
+
+    function updateUpcomingSlider() {
+        const imageWidth = upcomingImages[0].offsetWidth; 
+        const totalWidth = imageWidth * upcomingImages.length;
+        upcomingSlider.style.transform = `translateX(${-currentIndexUpcoming * imageWidth}px)`; // Desplazamiento basado en el índice actual
+    }
+
+    nextUpcomingButton.addEventListener("click", function () {
+        if (currentIndexUpcoming < upcomingImages.length - visibleImagesUpcoming) {
+            currentIndexUpcoming++;
+            updateUpcomingSlider();
+        }
+    });
+
+    prevUpcomingButton.addEventListener("click", function () {
+        if (currentIndexUpcoming > 0) {
+            currentIndexUpcoming--;
+            updateUpcomingSlider();
+        }
+    });
+
+    window.addEventListener("resize", updateUpcomingSlider);
+    updateUpcomingSlider();
 });
