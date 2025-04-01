@@ -32,7 +32,7 @@
         height: 300px;
     }
     .menu{
-        margin-top: -155px;
+        margin-top: -170px;
         gap: 10px;
         width: 25%;
         margin-left: 69%;
@@ -47,7 +47,7 @@
     }
     .offer{
         width: 38%;
-        margin-top: -80px;
+        margin-top: -75px;
         margin-left: 123%;
         padding: 20px 3.5%;
         height: 70px;
@@ -66,7 +66,7 @@
     }
     .gallery{
         width: 60%;
-        margin-top: 20px;
+        margin-top: 5px;
         margin-left: -4%;
         padding: 0;
         display: block;
@@ -92,8 +92,8 @@
         padding: 10px;
         border-radius: 5px;
     }
-    .image-text h2{
-        font-size: 8px;
+    .image-text h3{
+        font-size: 12px;
     }
     .image-text p{
         font-size: 8px;
@@ -155,7 +155,7 @@
         height: 300px;
     }
     .menu{
-        margin-top: -155px;
+        margin-top: -170px;
         gap: 10px;
         width: 25%;
         margin-left: 69%;
@@ -168,9 +168,18 @@
     .menu a button img{
         width: 15px;
     }
+    .image-text-upcoming h3{
+        font-size: 12px;
+    }
+    .image-text-upcoming p{
+        font-size: 8px;
+    }
+    .image-text-upcoming a{
+        font-size: 8px;
+    }
     .offer{
         width: 40%;
-        margin-top: -80px;
+        margin-top: -75px;
         margin-left: 123%;
         padding: 20px 3.5%;
         height: 70px;
@@ -188,7 +197,7 @@
     }
     .gallery{
         width: 60%;
-        margin-top: 20px;
+        margin-top: 5px;
         margin-left: -4%;
         padding: 0;
         display: block;
@@ -214,8 +223,8 @@
         padding: 10px 10%;
         border-radius: 5px;
     }
-    .image-text h2{
-        font-size: 8px;
+    .image-text h3{
+        font-size: 10px;
     }
     .image-text p{
         font-size: 8px;
@@ -294,6 +303,10 @@
         width: 100%;
         font-size: 14px;
         padding: 10px;
+    }
+    .upcoming-events{
+        width: calc(90% - 20px);
+        margin-left: 0%;
     }
     .gallery{
         width: 93%;
@@ -409,6 +422,10 @@
     .image-text-principal{
         font-size: 12px;
         padding: 15px;
+    }
+    .upcoming-events{
+        width: calc(90% - 20px);
+        margin-left: 0%;
     }
     .menu{
         position: relative;

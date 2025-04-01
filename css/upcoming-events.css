@@ -5,6 +5,7 @@ body{
     font-style: normal;
     height: 430px;
     min-height: 100vh;
+    margin-top: -5px;
     overflow-x: hidden;
     background: url(./img/background-image.jpg) no-repeat;
     background-size: cover;
@@ -27,7 +28,7 @@ nav{
     padding: 6px 20px;
     border-radius: 25px;
     width: 60%;
-    margin: 20px auto;
+    margin: 10px auto;
     position: absolute;
     top: 5px;
     left: 50%;
@@ -75,8 +76,8 @@ input::placeholder{
     position: relative;
     display: flex;
     align-items: center;
-    width: calc(48% - 20px);
-    margin-left: -47%;
+    width: calc(61.5% - 20px);
+    margin-left: -33%;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 20px 33px 20px 33px;
@@ -85,6 +86,7 @@ input::placeholder{
 .images-container-upcoming{
     overflow: hidden;
     width: 100%;
+    height: 262px;
 }
 .images-upcoming{
     display: flex;
@@ -107,16 +109,15 @@ input::placeholder{
 }
 /* Text Style */
 .image-text-upcoming{
-    position: relative;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 210px;
+    left: 41%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.813);
     color: rgb(0, 0, 0);
-    padding: 10px 15px;
+    padding: 10px 5%;
     border-radius: 10px;
-    width: 50%;
-    text-align: center;
+    width: 70%;
+    text-align: left;
     z-index: 2;
 }
 .image-text-upcoming h3{
@@ -161,7 +162,7 @@ input::placeholder{
 /* Menu Style */
 .menu{
     position: absolute;
-    margin-top: -115px;
+    margin-top: -120px;
     margin-left: 68%;
     width: 26%;
     transform: translateY(-50%);
@@ -210,14 +211,20 @@ input::placeholder{
     position: absolute;
     margin-top: 190px;
     margin-left: 63.5%;
+    text-decoration: none;
+    list-style: none;
     transform: translateY(-50%);
     padding: 20px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+    outline: 2px solid #769bd0;
+    outline-offset: 1px;
     text-align: left;
     width: 24.5%;
     height: 85px;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
 }
 .offer h2{
     margin: 0 0 10px;
@@ -229,14 +236,14 @@ input::placeholder{
     font-size: 14px;
     color: #000000;
 }
-.offer img{
-    margin-top: -10px;
-    margin-right: -10px;
+.button-upcoming_event img{
+    margin-top: -50px;
+    margin-right: -65%;
     width: 20px;
     float: right;
     transition: all 0.2s ease-in-out;
 }
-.offer img:hover{
+.button-upcoming_event img:hover{
     transform: scale(1.1);
 }
 
@@ -247,6 +254,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    z-index: 100;
 }
 .slider{
     position: relative;
@@ -258,6 +266,7 @@ input::placeholder{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 20px 33px 20px 33px;
     border-radius: 15px;
+    z-index: 100;
 }
 .images-container{
     overflow: hidden;
@@ -356,6 +365,7 @@ footer .social-media{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     padding: 10px;
     border-radius: 10px;
+    z-index: 100;
 }
 footer .social-media a img{
     width: 25px;
