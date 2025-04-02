@@ -141,3 +141,39 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateAboutUsSlider);
     updateAboutUsSlider();
 });
+
+/* Sources */
+document.addEventListener("DOMContentLoaded", function () {
+    const sourcesSliderContainer = document.querySelector(".gallery-sources");
+    const sourcesSlider = sourcesSliderContainer.querySelector(".images-sources");
+    const sourcesImages = sourcesSliderContainer.querySelectorAll(".image-item-sources");
+    const prevSourcesButton = sourcesSliderContainer.querySelector(".prev-sources");
+    const nextSourcesButton = sourcesSliderContainer.querySelector(".next-sources");
+
+    let currentIndexSources = 0;
+
+    const visibleImagesSources = 3;
+
+    function updateSourcesSlider() {
+        const imageWidth = sourcesImages[0].offsetWidth; 
+        const totalWidth = imageWidth * sourcesImages.length;
+        sourcesSlider.style.transform = `translateX(${-currentIndexSources * imageWidth}px)`;
+    }
+
+    nextSourcesButton.addEventListener("click", function () {
+        if (currentIndexSources < sourcesImages.length - visibleImagesSources) {
+            currentIndexSources++;
+            updateSourcesSlider();
+        }
+    });
+
+    prevSourcesButton.addEventListener("click", function () {
+        if (currentIndexSources > 0) {
+            currentIndexSources--;
+            updateSourcesSlider();
+        }
+    });
+
+    window.addEventListener("resize", updateSourcesSlider);
+    updateSourcesSlider();
+});
