@@ -64,15 +64,15 @@ input::placeholder{
     transform: scale(1.1);
 }
 
-/* Gallery Event-History Style */
-.gallery-history{
+/* Gallery About Us Style */
+.gallery-about_us{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.event-history{
+.about_us{
     position: relative;
     display: flex;
     align-items: center;
@@ -83,16 +83,16 @@ input::placeholder{
     padding: 20px 33px 20px 33px;
     border-radius: 15px;
 }
-.images-container-event-history{
+.images-container-about_us{
     overflow: hidden;
     width: 100%;
     height: 262px;
 }
-.images-event-history{
+.images-about_us{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.images-event-history .image-item-event-history img{
+.images-about_us .image-item-about_us img{
     position: relative;
     width: 90%;
     height: 150px;
@@ -101,14 +101,14 @@ input::placeholder{
     border-radius: 10px;
     margin: 0 5px;
 }
-.image-item-event-history{
+.image-item-about_us{
     flex: 0 0 33.33%;
     position: relative;
     display: inline-block;
     text-align: center;
 }
 /* Text Style */
-.image-text-event-history{
+.image-text-about_us{
     position: absolute;
     top: 210px;
     left: 41%;
@@ -120,27 +120,27 @@ input::placeholder{
     text-align: left;
     z-index: 2;
 }
-.image-text-event-history h3{
+.image-text-about_us h3{
     margin: 0;
     font-weight: 600;
     font-size: 14px;
 }
-.image-text-event-history p{
+.image-text-about_us p{
     margin: 3px 0;
     font-size: 10px;
 }
-.image-text-event-history a{
+.image-text-about_us a{
     color: #000000;
     font-size: 10px;
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
-.image-text-event-history a:hover{
+.image-text-about_us a:hover{
     font-weight: 600;
 }
 
-.event-history .prev-event-history,
-.event-history .next-event-history{
+.about_us .prev-about_us,
+.about_us .next-about_us{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -148,12 +148,12 @@ input::placeholder{
     cursor: pointer;
     z-index: 10;
 }
-.event-history .prev-event-history{
+.about_us .prev-about_us{
     width: 20px;
     left: 10px;
     transform: translateY(-50%) rotate(180deg);
 }
-.event-history .next-event-history{
+.about_us .next-about_us{
     width: 20px;
     right: 10px;
     transform: translateY(-50%);

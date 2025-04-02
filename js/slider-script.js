@@ -105,3 +105,39 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateHistorySlider);
     updateHistorySlider();
 });
+
+/* About Us */
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutusSliderContainer = document.querySelector(".gallery-about_us");
+    const aboutusSlider = aboutusSliderContainer.querySelector(".images-about_us");
+    const aboutusImages = aboutusSliderContainer.querySelectorAll(".image-item-about_us");
+    const prevAboutUsButton = aboutusSliderContainer.querySelector(".prev-about_us");
+    const nextAboutUsButton = aboutusSliderContainer.querySelector(".next-about_us");
+
+    let currentIndexAboutUs = 0;
+
+    const visibleImagesAboutUs = 3;
+
+    function updateAboutUsSlider() {
+        const imageWidth = aboutusImages[0].offsetWidth; 
+        const totalWidth = imageWidth * aboutusImages.length;
+        aboutusSlider.style.transform = `translateX(${-currentIndexAboutUs * imageWidth}px)`;
+    }
+
+    nextAboutUsButton.addEventListener("click", function () {
+        if (currentIndexAboutUs < aboutusImages.length - visibleImagesAboutUs) {
+            currentIndexAboutUs++;
+            updateAboutUsSlider();
+        }
+    });
+
+    prevAboutUsButton.addEventListener("click", function () {
+        if (currentIndexAboutUs > 0) {
+            currentIndexAboutUs--;
+            updateAboutUsSlider();
+        }
+    });
+
+    window.addEventListener("resize", updateAboutUsSlider);
+    updateAboutUsSlider();
+});
