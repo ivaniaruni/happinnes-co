@@ -177,5 +177,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateSourcesSlider);
     updateSourcesSlider();
 });
-
-/* Events */
