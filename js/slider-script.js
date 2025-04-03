@@ -177,3 +177,39 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateSourcesSlider);
     updateSourcesSlider();
 });
+
+/* Event History & Upcoming */
+document.addEventListener("DOMContentLoaded", function () {
+    const historySliderContainer = document.querySelector(".gallery-upcoming");
+    const historySlider = historySliderContainer.querySelector(".images-event-history");
+    const historyImages = historySliderContainer.querySelectorAll(".image-item-event-history");
+    const prevHistoryButton = historySliderContainer.querySelector(".prev-event-history");
+    const nextHistoryButton = historySliderContainer.querySelector(".next-event-history");
+
+    let currentIndexHistory = 0;
+
+    const visibleImagesHistory = 3;
+
+    function updateHistorySlider() {
+        const imageWidth = historyImages[0].offsetWidth; 
+        const totalWidth = imageWidth * historyImages.length;
+        historySlider.style.transform = `translateX(${-currentIndexHistory * imageWidth}px)`;
+    }
+
+    nextHistoryButton.addEventListener("click", function () {
+        if (currentIndexHistory < historyImages.length - visibleImagesHistory) {
+            currentIndexHistory++;
+            updateHistorySlider();
+        }
+    });
+
+    prevHistoryButton.addEventListener("click", function () {
+        if (currentIndexHistory > 0) {
+            currentIndexHistory--;
+            updateHistorySlider();
+        }
+    });
+
+    window.addEventListener("resize", updateHistorySlider);
+    updateHistorySlider();
+});

@@ -157,8 +157,8 @@
     .menu{
         margin-top: -170px;
         gap: 10px;
-        width: 25%;
-        margin-left: 69%;
+        width: 20%;
+        margin-left: 75%;
     }
     .menu a button{
         font-size: 10px;
@@ -175,6 +175,15 @@
         font-size: 8px;
     }
     .image-text-upcoming a{
+        font-size: 8px;
+    }
+    .image-text-event-history h3{
+        font-size: 12px;
+    }
+    .image-text-event-history p{
+        font-size: 8px;
+    }
+    .image-text-event-history a{
         font-size: 8px;
     }
     .offer{
@@ -304,9 +313,31 @@
         font-size: 14px;
         padding: 10px;
     }
+    .event-history{
+        width: calc(95% - 20px);
+        margin-left: 2%;
+    }
     .upcoming-events{
-        width: calc(90% - 20px);
+        width: calc(95% - 20px);
         margin-left: 0%;
+    }
+    .image-text-upcoming h3{
+        font-size: 10px;
+    }
+    .image-text-upcoming p{
+        font-size: 6px;
+    }
+    .image-text-upcoming a{
+        font-size: 6px;
+    }
+    .image-text-event-history h3{
+        font-size: 10px;
+    }
+    .image-text-event-history p{
+        font-size: 6px;
+    }
+    .image-text-event-history a{
+        font-size: 6px;
     }
     .gallery{
         width: 93%;
@@ -424,6 +455,10 @@
         padding: 15px;
     }
     .upcoming-events{
+        width: calc(95% - 20px);
+        margin-left: 2%;
+    }
+    .event-history{
         width: calc(90% - 20px);
         margin-left: 0%;
     }
