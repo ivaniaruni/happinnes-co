@@ -279,6 +279,11 @@
         transform: none;
         padding: 6px 0;
     }
+    .suggestions{
+        width: 60%;
+        margin-left: 8.5%;
+        margin-top: 102px;
+    }
     .search input{
         width: 100%;
         padding: 8px 15px;
