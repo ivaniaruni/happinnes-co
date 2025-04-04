@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Taller", url: "/html/event-history/workshop.html" },
         
         //Upcoming events
-        { name: "Simfonía", url: "/html/upcoming-events/workshop.html/symphonic.html" },
-        { name: "Cine", url: "/html/upcoming-events/workshop.html/cinema.html" },
-        { name: "Teatro", url: "/html/upcoming-events/workshop.html/theater.html" },
-        { name: "Arte", url: "/html/upcoming-events/workshop.html/art.html" },
-        { name: "Fotografía", url: "/html/upcoming-events/workshop.html/photo.html" },
-        { name: "Poesía", url: "/html/upcoming-events/workshop.html/poetry.html" },
-        { name: "Danza", url: "/html/upcoming-events/workshop.html/dance.html" },
-        { name: "Libros", url: "/html/upcoming-events/workshop.html/books.html" },
+        { name: "Simfonía", url: "/html/upcoming-events/symphonic.html" },
+        { name: "Cine", url: "/html/upcoming-events/cinema.html" },
+        { name: "Teatro", url: "/html/upcoming-events/theater.html" },
+        { name: "Arte", url: "/html/upcoming-events/art.html" },
+        { name: "Fotografía", url: "/html/upcoming-events/photo.html" },
+        { name: "Poesía", url: "/html/upcoming-events/poetry.html" },
+        { name: "Danza", url: "/html/upcoming-events/dance.html" },
+        { name: "Libros", url: "/html/upcoming-events/books.html" },
     ];
 
     // Función para mostrar sugerencias

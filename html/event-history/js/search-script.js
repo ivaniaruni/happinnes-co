@@ -6,24 +6,24 @@ document.addEventListener("DOMContentLoaded", function () {
     // Lista de páginas disponibles
     const pages = [
         //Events History
-        { name: "Carnaval", url: "./carnaval.html" },
-        { name: "Feria", url: "./fair.html" },
-        { name: "Folklore", url: "./folklore.html" },
-        { name: "Opera", url: "./opera.html" },
-        { name: "Escultura", url: "./sculpture.html" },
-        { name: "Cortos", url: "./short-film.html" },
-        { name: "Versos", url: "./verses.html" },
-        { name: "Taller", url: "./workshop.html" },
+        { name: "Carnaval", url: "/html/event-history/carnaval.html" },
+        { name: "Feria", url: "/html/event-history/fair.html" },
+        { name: "Folklore", url: "/html/event-history/folklore.html" },
+        { name: "Opera", url: "/html/event-history/opera.html" },
+        { name: "Escultura", url: "/html/event-history/sculpture.html" },
+        { name: "Cortos", url: "/html/event-history/short-film.html" },
+        { name: "Versos", url: "/html/event-history/verses.html" },
+        { name: "Taller", url: "/html/event-history/workshop.html" },
         
         //Upcoming events
-        { name: "Simfonía", url: "./symphonic.html" },
-        { name: "Cine", url: "./cinema.html" },
-        { name: "Teatro", url: "./theater.html" },
-        { name: "Arte", url: "./art.html" },
-        { name: "Fotografía", url: "./photo.html" },
-        { name: "Poesía", url: "./poetry.html" },
-        { name: "Danza", url: "./dance.html" },
-        { name: "Libros", url: "./books.html" },
+        { name: "Simfonía", url: "/html/upcoming-events/symphonic.html" },
+        { name: "Cine", url: "/html/upcoming-events/cinema.html" },
+        { name: "Teatro", url: "/html/upcoming-events/theater.html" },
+        { name: "Arte", url: "/html/upcoming-events/art.html" },
+        { name: "Fotografía", url: "/html/upcoming-events/photo.html" },
+        { name: "Poesía", url: "/html/upcoming-events/poetry.html" },
+        { name: "Danza", url: "/html/upcoming-events/dance.html" },
+        { name: "Libros", url: "/html/upcoming-events/books.html" },
     ];
 
     // Función para mostrar sugerencias
