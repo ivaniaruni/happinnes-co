@@ -1,0 +1,497 @@
+@media (min-width: 1025px){
+    body{
+        background: url(./background-image.jpg) no-repeat center center;
+        object-fit: cover;
+        overflow-y: hidden;
+    }
+    nav{
+        flex-direction: column;
+        padding: 30px 10px 0 0;
+        align-items: stretch;
+    }
+    .logo{
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .search{
+        position: relative;
+        width: 50%;
+        margin-top: -70px;
+        margin-left: -2%;
+        transform: none;
+        padding: 6px 0;
+    }
+    .image-block{
+        width: calc(42.5% - 20px);
+        margin-top: 10px;
+    }
+    .image-block img{
+        height: 300px;
+    }
+    .menu{
+        margin-top: -155px;
+        gap: 10px;
+        width: 25%;
+        margin-left: 69%;
+    }
+    .menu a button{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu a button img{
+        width: 15px;
+    }
+    .offer{
+        width: 38%;
+        margin-top: -80px;
+        margin-left: 123%;
+        padding: 20px 3.5%;
+        height: 70px;
+    }
+    .offer img{
+        margin-top: -10px;
+        margin-right: -5px;
+        margin-top: 5px;
+        margin-right: -4%;
+    }
+    .offer h2{
+        font-size: 12px;
+    }
+    .offer p{
+        font-size: 10px;
+    }
+    .gallery{
+        width: 60%;
+        margin-top: 20px;
+        margin-left: -4%;
+        padding: 0;
+        display: block;
+    }
+    .slider{
+        width: 75%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .slider .prev{
+        left: 7.5px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .slider .next{
+        right: 7.5px;
+        transform: translateY(-50%);
+    }
+    .images .image-item img{
+        width: 85%;
+        height: 120px;
+    }
+    .image-text{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .image-text h2{
+        font-size: 8px;
+    }
+    .image-text p{
+        font-size: 8px;
+    }
+    .image-text a{
+        font-size: 8px;
+    }
+    .image-text-principal{
+        margin-left: 16.5%;
+    }
+    .image-text-principal h2{
+        font-size: 12px;
+    }
+    .image-text-principal p{
+        font-size: 10px;
+    }
+    footer .social-media{
+        gap: 12px;
+        width: 2%;
+        margin-top: 51px;
+        margin-left: -2%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    footer .social-media a img{
+        width: 20px;
+    }
+    footer .copyright{
+        width: 9%;
+        margin-top: 51px;
+    }
+    .offer img{
+        width: 15px;
+    }
+}
+/* Responsive Ajust */
+@media (max-width: 1024px){
+    body{
+        background: url(./background-image.jpg) no-repeat center center;
+        object-fit: cover;
+        overflow-y: hidden;
+    }
+    nav{
+        flex-direction: column;
+        padding: 30px 10px 0 0;
+        align-items: stretch;
+    }
+    .logo{
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .search{
+        position: relative;
+        width: 50%;
+        margin-top: -70px;
+        margin-left: -2%;
+        transform: none;
+        padding: 6px 0;
+    }
+    .image-block{
+        padding: 0 6% 0 0;
+    }
+    .image-block img{
+        width: calc(50% - 20px);
+    }
+    .menu{
+        margin-top: -155px;
+        gap: 10px;
+        width: 25%;
+        margin-left: 69%;
+    }
+    .menu a button{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu a button img{
+        width: 15px;
+    }
+    .offer{
+        width: 40%;
+        margin-top: -80px;
+        margin-left: 123%;
+        padding: 20px 3.5%;
+        height: 70px;
+    }
+    .offer img{
+        position: absolute;
+        margin-top: -5px;
+        margin-left: 82%;
+    }
+    .offer h2{
+        font-size: 12px;
+    }
+    .offer p{
+        font-size: 10px;
+    }
+    .gallery{
+        width: 60%;
+        margin-top: 20px;
+        margin-left: -4%;
+        padding: 0;
+        display: block;
+    }
+    .gallery-results{
+        margin-left: 30%;
+    }
+    .gallery-results img{
+        margin-left: 5%;
+    }
+    .slider{
+        width: 75%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .slider .prev{
+        left: 7.5px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .slider .next{
+        right: 7.5px;
+        transform: translateY(-50%);
+    }
+    .images .image-item img{
+        width: 85%;
+        height: 120px;
+    }
+    .image-text{
+        padding: 10px 10%;
+        border-radius: 5px;
+    }
+    .image-text h2{
+        font-size: 8px;
+    }
+    .image-text p{
+        font-size: 8px;
+    }
+    .image-text a{
+        font-size: 8px;
+    }
+    .image-text-principal{
+        margin-left: 18%;
+    }
+    .image-text-principal h2{
+        font-size: 12px;
+    }
+    .image-text-principal p{
+        font-size: 10px;
+    }
+    footer .social-media{
+        gap: 12px;
+        width: 2%;
+        margin-top: 51px;
+        margin-left: -2%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    footer .social-media a img{
+        width: 20px;
+    }
+    footer .copyright{
+        width: 9%;
+        margin-top: 51px;
+    }
+    .offer img{
+        width: 15px;
+    }
+}
+@media (max-width: 768px){
+    body{
+        background: url(./background-image.jpg) no-repeat center center;
+        object-fit: cover;
+        background-attachment: scroll;
+        overflow-y: auto;
+    }
+    nav{
+        flex-direction: column;
+        padding: 30px 10px 0 0;
+        align-items: stretch;
+    }
+    .logo{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .logo img{
+        margin-top: 0;
+        margin-left: -10%;
+        width: 150px;
+    }
+    .search{
+        position: static;
+        width: 70%;
+        margin: 20px auto;
+        transform: none;
+        padding: 6px 0;
+    }
+    .search input{
+        width: 100%;
+        padding: 8px 15px;
+    }
+    .image-block{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .image-block img{
+        height: 300px;
+    }
+    .menu{
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .menu a button{
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .gallery{
+        width: 93%;
+        margin: 20px auto 0;
+        padding: 0;
+        display: block;
+    }
+    .gallery-results{
+        width: calc(30% - 20px);
+        margin-left: 34%;
+    }
+    .gallery-results img{
+        margin-left: 5%;
+    }
+    .slider{
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .slider .prev{
+        left: 6.5px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .slider .next{
+        right: 6.5px;
+        transform: translateY(-50%);
+    }
+    .images .image-item img{
+        width: 85%;
+        height: 120px;
+    }
+    .image-text{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .image-text h2{
+        font-size: 8px;
+    }
+    .image-text p{
+        font-size: 8px;
+    }
+    .image-text a{
+        font-size: 8px;
+    }
+    .offer{
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 90px auto;
+        margin-bottom: -70px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+    .offer img{
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 45%;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    footer .social-media{
+        width: 58%;
+        margin: 30px auto;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+    footer .copyright{
+        display: block;
+        position: relative;
+        width: 70%;
+        margin: 15px auto;
+        margin-top: -15px;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 480px){
+    nav{
+        flex-direction: column;
+        padding: 15px 10px 0 0;
+        align-items: stretch;
+    }
+    .logo{
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+    .search{
+        position: static;
+        width: 90%;
+        margin: 40px auto;
+        transform: none;
+    }
+    .image-block{
+        width: 90%;
+        margin: -15px auto;
+    }
+    .image-text-principal{
+        font-size: 12px;
+        padding: 15px;
+    }
+    .menu{
+        position: relative;
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+    .offer{
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 90px auto;
+        margin-bottom: -50px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+    .offer img{
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 44%;
+    }
+    .slider{
+        display: none;
+    }
+    footer{
+        position: absolute;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    footer .social-media{
+        position: relative;
+        width: 90%;
+        margin: 20px auto 10px;  
+    }
+    footer .copyright{
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 10px auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+}
