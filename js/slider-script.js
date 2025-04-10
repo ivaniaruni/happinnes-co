@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.style.transform = `translateX(${-currentIndex * totalWidth}px)`;
     }
 
-    // Botón "Siguiente"
+    // Button "Next"
     nextButton.addEventListener("click", function () {
         if (currentIndex < Math.ceil(images.length / 2) - 1) {
             currentIndex++;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Botón "Anterior"
+    // Button "Last"
     prevButton.addEventListener("click", function () {
         if (currentIndex > 0) {
             currentIndex--;

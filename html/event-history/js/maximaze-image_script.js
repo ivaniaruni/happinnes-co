@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona las imágenes dentro de .gallery-results
     const galleryImages = document.querySelectorAll(".gallery-results img");
 
-    // Crea el modal dinámicamente
     const modal = document.createElement("div");
     modal.classList.add("modal");
 
@@ -11,25 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const closeButton = document.createElement("button");
     closeButton.classList.add("close-button");
-    closeButton.innerHTML = "&times;"; // Botón de cierre (X)
+    closeButton.innerHTML = "&times;";
     modal.appendChild(closeButton);
 
     document.body.appendChild(modal);
 
-    // Función para abrir el modal
     galleryImages.forEach((image) => {
         image.addEventListener("click", function () {
-            modalImage.src = image.src; // Establece la imagen seleccionada
-            modal.style.display = "flex"; // Muestra el modal
+            modalImage.src = image.src;
+            modal.style.display = "flex";
         });
     });
 
-    // Función para cerrar el modal
     closeButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Oculta el modal
+        modal.style.display = "none";
     });
 
-    // Cierra el modal al hacer clic fuera de la imagen
     modal.addEventListener("click", function (e) {
         if (e.target === modal) {
             modal.style.display = "none";

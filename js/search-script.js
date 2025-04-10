@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchButton = document.getElementById("search-button");
     const suggestionsContainer = document.getElementById("suggestions");
 
-    // Lista de páginas disponibles
+    // List of available pages
     const pages = [
         //Events History
         { name: "Carnaval", url: "/html/event-history/carnaval.html" },
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Libros", url: "/html/upcoming-events/books.html" },
     ];
 
-    // Función para mostrar sugerencias
+    // Function to show suggestions
     function showSuggestions(query) {
         const filteredPages = pages.filter((page) =>
             page.name.toLowerCase().includes(query.toLowerCase())
