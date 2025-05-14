@@ -1,4 +1,5 @@
 # HAPPINESS&Co - Cultural Events Platform  
+![happines co-web_design](https://github.com/user-attachments/assets/e8e66bb7-29be-4bdf-b53a-16ee648d3eac)
 
 ## 📝 Project Overview  
 **HAPPINESS&Co** is a responsive web platform designed to showcase cultural events, travel experiences, and entertainment activities. Developed as part of a **Higher Vocational Training (FP Grado Superior)** program in **Multiplatform Application Development**, this project demonstrates front-end skills in **HTML5, CSS3, and JavaScript**.  
